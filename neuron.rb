@@ -21,11 +21,10 @@ class Neuron < Formula
   end
 
   def install
-    bin.install "neuron"
+    bin.install Dir["neuron-*"].first => "neuron"
   end
 
   test do
-    assert_match "neuron", shell_output("#{bin}/neuron --help 2>&1", 1)
+    assert_match "neuron", shell_output("#{bin}/neuron --help")
   end
 end
-
