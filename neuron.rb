@@ -1,23 +1,23 @@
 class Neuron < Formula
   desc "A simple TUI app to dump and search your thoughts"
   homepage "https://github.com/suryanox/neuron"
-  version "0.1.1"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     on_intel do
       url "https://github.com/suryanox/neuron/releases/download/v#{version}/neuron-x86_64-apple-darwin.tar.gz"
-      sha256 "5c942cd46ae82a31ffa280a04eaa955d1ce3b1855b5cc28bbc86109511a072af"
+      sha256 "c21e64552d0158fed29bcfbdbf6487a797fed7219408beec71710ef32fc2c988"
     end
     on_arm do
       url "https://github.com/suryanox/neuron/releases/download/v#{version}/neuron-aarch64-apple-darwin.tar.gz"
-      sha256 "1c982420ad870893fa4c67141d4888c0bd000197bada97255ae09a8e465ade82"
+      sha256 "21fa6e90d95db183722af9b4e2db0c4123e7279dcc2cefe43c4402c057678f14"
     end
   end
 
   on_linux do
     url "https://github.com/suryanox/neuron/releases/download/v#{version}/neuron-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "644b0043bcc5d3b68ed7db24275e7e77545f8dc6b4cea87754bcb2f7c6c8bce7"
+    sha256 "8c388195eb670369e3821b5634caca382eae1f7dc88f0c7a058071615ae17b7f"
   end
 
   def install
