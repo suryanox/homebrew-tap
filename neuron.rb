@@ -1,7 +1,7 @@
 class Neuron < Formula
   desc "A simple TUI app to dump and search your thoughts"
   homepage "https://github.com/suryanox/neuron"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
